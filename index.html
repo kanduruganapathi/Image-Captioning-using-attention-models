@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Image captioning project</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/image.css') }}">  
+        
+
+    </head>
+    <body background="color":orangered>
+        <div class="head">
+            <h1 style="color: brown;">IMAGE CAPTIONING PROJECT</h1>
+            <h1 class="he" style="color: brown;">USING DEEP LEARNING</h1>
+            <h2>welcome,{{name}}</h2>
+            </div>
+            <div class="log">
+                <form action="{{ url_for('login') }}" enctype="multipart/form-data" method="POST">
+                    <button type="submit" class="btn">login</button>
+                </form>
+                </div>
+            <div class="about">
+              
+                <form action="{{ url_for('Home') }}" enctype="multipart/form-data" method="POST">
+                    <button type="submit" class="btn" aria-setsize="40px">Home</button>
+                </form>
+               
+            </div>
+           
+
+
+
+    
+
+
+
+
+            <div class="gan">
+    <h1>Take input Image</h1>
+    <form action="{{ url_for('after') }}" enctype="multipart/form-data" method="POST">
+        <input type="file" name="file1">
+        <h1>Get ur predictions</h1>
+        <input type="submit">
+    </form>
+
+    
+    </div>
+    </body> 
+</html>

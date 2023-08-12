@@ -1,0 +1,21 @@
+<html>
+    
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image captioning project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/image.css') }}">  
+</head>
+    <body>
+        <h1 style="color: orangered;">
+            IMAGE CAPTIONING PROJECT
+        </h1>
+        <img src="{{ url_for('static',filename='file.jpg') }}" alt="">
+
+        <div>
+            <h1>{{ final }}</h1>
+        </div>
+
+    
+    </body>
+</html>
